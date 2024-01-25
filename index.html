@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hedera Token Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TOKEN STATS</h1>
+        </header>
+        <div class="input-section">
+            <input type="text" id="token-id" placeholder="Enter Token ID">
+            <button id="checkButton" onclick="fetchTokenInfo()">Check Supply</button>
+        </div>
+
+        <div class="bar-container">
+            <div class="label">Released Supply</div>
+            <div class="supply-bar" id="supply-bar">
+                <div class="supply-fill" id="supply-fill"></div>
+            </div>
+        </div>
+
+        
+        <div class="bar-container">
+    <div class="label">Tokens in payer account:</div>
+    <div class="supply-bar" id="creator-supply-bar">
+        <div class="supply-fill" id="creator-supply-fill"></div>
+    </div>
+</div>
+
+
+<div class="holder-count">
+    <span id="holder-count">0</span> Holders
+</div>
+
+        
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
