@@ -1,11 +1,12 @@
 window.onload = function() {
-    var path = window.location.pathname;
-    var tkID = path.substring(12); // Remove the leading '/' from the path
+    var searchParams = new URLSearchParams(window.location.search);
+    var tkID = searchParams.get('tkID');
 
     if (tkID) {
         document.getElementById('token-id').value = tkID;
     }
 };
+
 
 
 function fetchTokenInfo() {
