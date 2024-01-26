@@ -6,7 +6,7 @@ window.onload = function() {
         document.getElementById('token-id').value = tkID;
 
         // Simulate a click event on a button with the id "submit-button"
-        var submitButton = document.getElementById('submit-button');
+        var submitButton = document.getElementById('checkButton');
         if (submitButton) {
             submitButton.click(); // Trigger a click event on the button
         }
